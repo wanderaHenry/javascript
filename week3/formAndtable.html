@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Young4Chicks Request</title>
+</head>
+<body>
+
+  <h3>Young4Chicks Request Form</h3>
+
+  <!-- Request Form -->
+  <form id="chicksRequestform">
+    <label for="farmerName">Farmer Name:</label>
+    <input type="text" id="farmerName" required /><br>
+
+    <label for="age">Farmer Age:</label>
+    <input type="number" id="age" placeholder="Enter your age" required /><br>
+
+    <label for="quantity">Number of Chicks:</label>
+    <input type="number" id="quantity" required /><br>
+
+    <label for="chickType">Type of Chicks:</label>
+    <select id="chickType" required>
+      <option value="">Select Chick Type</option>
+      <option value="Broiler">Broiler</option>
+      <option value="Layers">Layers</option>
+    </select>
+
+    <br><button type="submit">Submit Request</button>
+    <p id="errormsg" style="color:red;"></p>
+  </form>
+
+  <h3>Requests Table Dashboard</h3>
+  <table id="tb1" border="1">
+    <thead>
+      <tr>
+        <th>Farmer Name</th>
+        <th>Age</th>
+        <th>Quantity</th>
+        <th>Type of Chicks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- New rows will appear here -->
+    </tbody>
+  </table>
+
+  <!-- Link to external JavaScript file -->
+  <script src="formandTablehandling.js"></script>
+
+</body>
+</html>

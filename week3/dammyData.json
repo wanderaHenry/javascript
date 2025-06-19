@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Duncan Magembe",
+    "Age": 24,
+    "quantinty": 100,
+    "type": "broiler"
+  },
+  {
+    "name": "oscar Luyimbazi",
+    "Age": 21,
+    "quantinty": 23,
+    "type": "layers"
+  },
+  {
+    "name": "Barvuhe Shimmy",
+    "Age": 20,
+    "quantinty": 50,
+    "type": "broiler"
+  },
+  {
+    "name": "Ocholla henry",
+    "Age": 24,
+    "quantinty": 75,
+    "type": "layers"
+  }
+]
