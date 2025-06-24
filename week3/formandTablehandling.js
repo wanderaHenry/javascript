@@ -18,7 +18,7 @@ form1.addEventListener("submit", function (event) {
     errorMsg.textContent = "Please fill in all fields correctly.";
     return;
   }
-  //save tolocal
+  //save to local storage
   saveToLocalStorage();
 
   addToTable(name, age, quantity, type);
