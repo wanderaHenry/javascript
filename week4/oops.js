@@ -84,12 +84,47 @@ class Animal{//parent class.
   }
 }
 class Dog extends Animal {
-  constructor(breed) {
-    super(breed); // Call the constructor of the parent class
-  }
+  
   speak() {
     console.log(`${this.name} barks.`);
   }
 }
 let daisy = new Dog("Daisy");
 daisy.speak(); // Output: Daisy barks.
+
+//polymorphism
+//methods of the class got same name but behave differently
+
+class User {
+  login() {
+    console.log("User logged in");
+  }
+}
+class Host extends User {
+  login() {
+    console.log("Host logged in with elevated privileges ");
+  }
+}
+let newHost = new Host()
+newHost.login(); // Output: Host logged in with elevated privileges
+// used in decision making just as if else statements
+
+
+//abstraction
+//hiding the complex implementation details and showing only the essential features of the object
+//example of abstraction is a car. You can drive it without knowing how the engine works.
+class Car {   
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  start() {
+    console.log(`The ${this.make} ${this.model} is starting.`);
+  }
+
+  stop() {
+    console.log(`The ${this.make} ${this.model} is stopping.`);
+  }
+}
+
